@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Weather app</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="app-wrap">
+    <header>
+      <input type="text" autocomplete="off" class="search-box" placeholder="Search for a city..." />
+      <div style="margin: auto;"><button id="searchBtn">Search</button></div>
+    </header>
+    <div id="error">
+      <p style="color: rgb(255, 200, 33);">404 ! City not found</p>
+    </div>
+    <main id="main">
+      <section class="location">
+        <div class="city"><span id="cityName"></span><span id="country"></span></div>
+        <div class="date"></div>
+      </section>
+      <div class="current">
+        <div class="temp"><span id="temperature"></span></div>
+        <div class="weather"></div>
+        <div class="others"><span id="humidity"></span></div>
+        <div class="others"><span id="pressure"></span></div>
+        <div class="others"><span id="wind"></span></div>
+      </div>
+    </main>
+  </div>
+  <footer>&copy; Modified and Scripted by Soumya Prakash Nayak</footer>
+  <script src="index.js"></script>
+</body>
+
+</html>
